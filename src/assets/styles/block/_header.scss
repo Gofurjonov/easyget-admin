@@ -1,0 +1,35 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    padding-left: 190px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $background;
+    border-bottom: 1.5px solid $stroke-gray-primary;
+    &__title{ 
+        
+        &__name{
+            color: $text-primary;
+            font-family: 'Inter';
+            font-size: 24px;
+            font-weight: $typography-heading1bold-font-weight;
+            padding: 31px 0 31px 32px;
+        }
+    }
+    &__dropdown{
+        padding: 24px 32px 24px 0;
+        &__select{
+            max-width: 113px;
+            padding: 10px 12px;
+            border-radius: 6px;
+            border: 1px solid $stroke-gray-primary;
+        }
+    }
+}

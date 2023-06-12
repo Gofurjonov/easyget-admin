@@ -1,10 +1,39 @@
 import React from 'react';
 
+
 const Login = () => {
     return (
-        <div>
-            <h1>Login</h1>
+        <>
+            {/* <div className="loginbox">
+                <div className="loginbox__body">
+                    <h1 className='loginbox__title'>sign in</h1>
+                    <form className='loginbox__container'>
+                        <label className='loginbox__labelOne'>username</label>
+                        <input type="text" placeholder='username'/>
+                        <label className='loginbox__labelTwo'>Password</label>
+                        <input type="password" placeholder='password'/>
+                        <button className='loginbox__button'>sign in</button>
+                    </form>
+                </div>
+            </div> */}
+            <div className="login-page">
+        <div className="form">
+            <form className="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p className="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+            <form className="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button>login</button>
+            <p className="message">Not registered? <a href="#">Create an account</a></p>
+            </form>
         </div>
+        </div>
+        </>
     );
 }
 

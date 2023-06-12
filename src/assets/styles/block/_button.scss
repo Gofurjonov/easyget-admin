@@ -1,0 +1,331 @@
+.button{
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    color: $text-contrast;
+    display: flex;
+    align-items: center;
+    font-weight:600;
+    justify-content: center;
+    font-weight: $typography-titlesemibold-font-weight;
+    &__icon{
+        color: $text-contrast;
+        padding: 15px;
+        padding-left: 0;
+
+    }
+    &:hover{
+        background: $background-accent-hover;
+    }
+    &:active{
+        background: $backgroun-accent-active;
+    }
+    &:disabled{
+        background: $background-accent-primary;
+        opacity: 50%;
+    }
+}
+.button_small{
+    height: 30px;
+    padding: 5.5px 16px;
+}
+.button_medium{
+    height: 36px;
+    padding: 8px 16px;
+}
+.button_large{
+    height: 48px;
+    padding: 12.5px 16px;
+}
+
+
+.btn_outline{
+    border: 1.5px solid #23AA49;
+    background: transparent;
+    color: $text-accent;
+    &:hover{
+        color: $stroke-accent;
+        background: $background-gray-hover;
+    }
+    &:active{
+        color: $text-accent;
+        background: $background-gray-active;
+
+    }
+    &:disabled{
+        opacity: 64%;
+    }
+}
+
+
+.btn_tertiary{
+   border: none;
+   background: #fff; 
+   color: $text-primary;
+   text-align: center;
+   &:hover{
+    color: $stroke-accent;
+    background: $background-gray-hover;
+}
+&:active{
+    color: $text-accent;
+    background: $background-gray-active;
+
+}
+&:disabled{
+    background: transparent;
+    opacity: 64%;
+}
+}
+
+.btn_secondary{
+    background: #EDF8F0;
+    border: none;
+   color: $text-accent;
+   &:hover{
+    color: $stroke-accent;
+    background: $background-gray-hover;
+}
+&:active{
+    color: $text-accent;
+    background: $background-accent-secondary;
+
+}
+&:disabled{
+    background: $background-accent-secondary;
+    opacity: 64%;
+}
+}
+// btn_negative
+.negative{
+    background: $bacground-negative-primary;
+    color: $text-negative;
+    border-radius: 12px;
+    border-color: $bacground-negative-primary;
+    .button_primary{
+        background: $bacground-negative-primary;
+        color:$text-contrast;
+        &:hover{
+            color: $text-contrast;
+            background: $background-negative-hover;
+        }
+        &:active{
+            color: $text-contrast;
+            background: $background-negative-active;
+    
+        }
+        &:disabled{
+            opacity: 50%;
+        }
+    }
+    .button_outline{
+        border-color: $bacground-negative-primary;
+        background: transparent;
+        color: $text-negative;
+        &:hover{
+            color: $text-negative;
+            background: $background-gray-hover;
+        }
+        &:active{
+            color: $text-negative;
+            background: $background-gray-active;
+    
+        }
+        &:disabled{
+            opacity: 64%;
+        }
+    }
+    .button_tertiary{
+        border: none;
+        background: $background ; 
+        color: $text-negative;
+        &:hover{
+         color: $text-negative;
+         background: $background-gray-hover;
+     }
+     &:active{
+         color: $text-negative;
+         background: $background-gray-active;
+     
+     }
+     &:disabled{
+         background: transparent;
+         opacity: 64%;
+     }
+     }
+     .button_secondary{
+        background: $bacground-negative-secondary;
+        border: none;
+        border-radius: 12px;
+        color: $text-negative;
+       &:hover{
+        color: $background-negative-hover;
+        background: $bacground-negative-secondary;
+    }
+    &:active{
+        color: $text-negative;
+        background: $bacground-negative-secondary
+    
+    }
+    &:disabled{
+        background: $bacground-negative-secondary;
+        opacity: 64%;
+    }
+    }
+
+}
+
+
+// btn_.neutral
+.neutral{
+
+    border-radius: 12px;
+    .button_primary{
+        background: #F8F8FA;
+        color: $text-primary;
+        &:hover{
+            color: $text-primary;
+            background: $background-gray-hover;
+        }
+        &:active{
+            color: $text-primary;
+            background: $background-gray-active;
+    
+        }
+        &:disabled{
+            opacity: 64%;
+        }
+    }
+    .button_outline{
+        border-color: $stroke-gray-secondary;
+        background: transparent;
+        color: $text-primary;
+        &:hover{
+            color: $text-primary;
+            background: $background-gray-hover;
+        }
+        &:active{
+            color: $text-primary;
+            background: $background-gray-active;
+    
+        }
+        &:disabled{
+            opacity: 64%;
+        }
+    }
+    .button_tertiary{
+        border: none;
+        background: $background; 
+        color: $text-primary;
+        &:hover{
+         color: $background-accent-hover;
+         background: $background;
+     }
+     &:active{
+         color: $backgroun-accent-active;
+         background: $background;
+     
+     }
+     &:disabled{
+         background: transparent;
+         opacity: 64%;
+     }
+     }
+     .button_secondary{
+        background: #EDF8F0;
+        border: none;
+       color: $text-primary;
+       &:hover{
+        color: $text-primary;
+        background: $background-gray-hover;
+    }
+    &:active{
+        color: $text-primary;
+        background: $background-gray-active;
+    
+    }
+    &:disabled{
+        background: #F8F8FA;
+        opacity: 64%;
+    }
+    }
+
+}
+
+// btn_regular
+.regular{
+    border-color: $background-accent-primary;
+    border-radius: 12px;
+    .button_primary{
+        background: $background-accent-primary;
+        color:$text-contrast;
+        &:hover{
+            color: $text-contrast;
+            background:  $background-accent-hover;
+        }
+        &:active{
+            color: $text-contrast;
+            background: $backgroun-accent-active;
+    
+        }
+        &:disabled{
+            opacity: 64%;
+        }
+    }
+    .button_outline{
+        border-color: $background-accent-primary;
+        background: $background;
+        color: $text-accent;
+        border: 2px solid $background-accent-primary;
+        &:hover{
+            color: $text-accent;
+            background:  $background-gray-hover;
+        }
+        &:active{
+            color: $text-accent;
+            background: $background-gray-active;
+    
+        }
+        &:disabled{
+            opacity: 64%;
+        }
+    }
+    .button_tertiary{
+        border: none;
+        background: $background; 
+        color: $text-accent;
+        &:hover{
+         color: $background-accent-hover;
+         background: $background-gray-hover;
+     }
+     &:active{
+         color: $text-accent;
+         background: $background-gray-active;
+     
+     }
+     &:disabled{
+         background: transparent;
+         opacity: 64%;
+     }
+     }
+     .button_secondary{
+        background: $background-accent-secondary;
+        border: none;
+       color: $text-accent;
+       &:hover{
+        color: $background-accent-hover;
+        background: $background-accent-secondary;
+    }
+    &:active{
+        color: $backgroun-accent-active;
+        background: $background-accent-secondary;
+    
+    }
+    &:disabled{
+        opacity: 64%;
+        background: $background-accent-secondary;
+    }
+    }
+
+}

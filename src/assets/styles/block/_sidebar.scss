@@ -1,0 +1,83 @@
+.sidebarbody{
+    width: 195px;
+    background: $background;
+    border-right: 1.5px solid $stroke-gray-primary;
+    z-index: 100;
+    position: fixed;
+    height: 100vh;
+    &__logo{
+        padding: 24px 39px 36px 24px;
+        text-align: center;
+        img{
+            width: 132px;
+        }
+    }
+    &__navbar{
+        padding-bottom: 201px;
+        &__menu{
+            list-style: none;
+            li{
+                padding-bottom: 29px;
+            }
+            a{
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                color: $text-primary;
+                font-weight: $typography-bodysemibold-font-weight;
+                font-size: 16px;
+                font-family: 'Inter';
+                font-style: normal;
+            }
+        }
+        &__span{
+            padding-left: 18.25px;
+        }
+    }
+    &__bottom{
+        &__user{
+            display: flex;
+            align-items: center;
+            padding-left: 16px;
+            &__logo{
+                width: 40px;
+                border-radius: 20px;
+                // border: 0.5px solid $stroke-gray-secondary;
+                padding-top: 6px;
+            }
+            &__name{
+                padding-left: 12px;
+            }
+            &__name h1{
+                font-weight: $typography-bodysemibold-font-weight;
+                font-size: 15px;
+                font-family: 'Inter';
+                color: $text-primary;
+            }
+            &__name p{
+                font-family: 'Inter';
+                font-weight: $typography-h1medium-font-weight;
+                font-size: 13px;
+                color: $text-secondary;
+                margin: 0;
+                padding-bottom: 13px;
+            }
+        }
+        &__logout{
+            display: flex;
+            align-items: center;
+            padding-left: 29px;
+            border-top: 1.5px solid $stroke-gray-primary;
+            &__logotip{
+                color: $text-negative;
+            }
+            &__title h2{
+                color: $text-negative;
+                font-family: 'Inter';
+                font-weight: $typography-titlesemibold-font-weight;
+                font-size: 16px;
+                padding-left: 18px;
+            }
+        }
+    }
+}

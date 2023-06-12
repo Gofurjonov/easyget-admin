@@ -1,0 +1,83 @@
+.containerbox{
+    padding-left: 232px;
+    padding-right: 32px;
+    padding-top: 160px;
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__name{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: $typography-heading1bold-font-weight;
+            font-size: 24px;
+            text-align: center;
+            color: $text-primary;
+        }
+        &__button{
+            img{
+                width: 30px;
+                padding-right: 11px;
+            }
+        }
+    }
+}
+.maincategoribox{
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        &__btn{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: red;
+        }
+    }
+   
+}
+
+.accordion-header{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+// .category__box{
+//     display: flex !important;
+//     align-items: center;
+//     justify-content: space-between !important;
+// }
+.category{
+    &__box{
+        width: 100% !important;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    &__name{
+        color: $text-primary;
+    }
+    &__big{
+        width: 280px !important;
+    }
+    &__small{
+        width: 35% !important;
+    }
+    &__big-and-small{
+        background-color: $background-gray;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 168px !important;
+        padding: 16px;
+        border-radius: 10px;
+    }
+    &__name-two{
+        font-size: 18px;
+        font-weight: $typography-titlesemibold-font-weight;
+        color: $text-primary;
+    }
+    
+}

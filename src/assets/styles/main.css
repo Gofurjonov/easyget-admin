@@ -1,4 +1,5 @@
 /* inter-regular - latin_cyrillic */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -345,4 +346,221 @@ template {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1.5px solid #e9eaec;
+}
+.header__title__name {
+  color: #00031a;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+  padding: 31px 0 31px 32px;
+}
+.header__dropdown {
+  padding: 24px 32px 24px 0;
+}
+.header__dropdown__select {
+  max-width: 113px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #e9eaec;
+}
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:hover, .form button:active, .form button:focus {
+  background: #43A047;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.form .register-form {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+.sidebarbody {
+  width: 195px;
+  background: #ffffff;
+  border-right: 1.5px solid #e9eaec;
+}
+.sidebarbody__logo {
+  padding: 24px 39px 36px 24px;
+  text-align: center;
+}
+.sidebarbody__logo img {
+  width: 132px;
+}
+.sidebarbody__navbar {
+  padding-bottom: 201px;
+}
+.sidebarbody__navbar__menu {
+  list-style: none;
+}
+.sidebarbody__navbar__menu li {
+  padding-bottom: 29px;
+}
+.sidebarbody__navbar__menu a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #00031a;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Inter";
+  font-style: normal;
+}
+.sidebarbody__navbar__span {
+  padding-left: 18.25px;
+}
+.sidebarbody__bottom__user {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+.sidebarbody__bottom__user__logo {
+  width: 40px;
+  border-radius: 20px;
+  padding-top: 6px;
+}
+.sidebarbody__bottom__user__name {
+  padding-left: 12px;
+}
+.sidebarbody__bottom__user__name h1 {
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "Inter";
+  color: #00031a;
+}
+.sidebarbody__bottom__user__name p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+  padding-bottom: 13px;
+}
+.sidebarbody__bottom__logout {
+  display: flex;
+  align-items: center;
+  padding-left: 29px;
+  border-top: 1.5px solid #e9eaec;
+}
+.sidebarbody__bottom__logout__logotip {
+  color: #ef4444;
+}
+.sidebarbody__bottom__logout__title h2 {
+  color: #ef4444;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 18px;
+}
+
+.layoutbox {
+  width: 100%;
+  display: flex;
+  position: fixed;
+}
+.layoutbox__left {
+  width: 13%;
+}
+.layoutbox__right {
+  width: 88%;
 }/*# sourceMappingURL=main.css.map */

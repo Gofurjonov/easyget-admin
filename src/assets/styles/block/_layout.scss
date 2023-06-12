@@ -1,0 +1,10 @@
+.layoutbox{
+    width: 100%;
+    display: flex;
+    &__left{
+        width: 13%;
+    }
+    &__right{
+        width: 88%;
+    }
+}

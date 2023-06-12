@@ -1,0 +1,41 @@
+.editbox{
+    padding: 16px;
+    width: 370px;
+    background: $background;
+    box-shadow: 0px 0px 2px rgba(0, 0, 40, 0.08), 0px 4px 120px rgba(0, 0, 40, 0.08);
+    border-radius: 24px;
+    &__top{
+        &__title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            &__text{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: $typography-bodysemibold-font-weight;
+                font-size: 20px;
+                color: $text-primary;
+                padding-left: 78px;
+            }
+            &__button{
+                position: absolute;
+                right: 16px; 
+                border: none;
+                background: $background;
+                color: $icon-secondary;
+                width: 10px;    
+
+            }
+        }
+    }
+    &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__btn{
+            width: 163px;
+            padding: 12.5px 0 13.5px 0;
+        }
+    }
+}
