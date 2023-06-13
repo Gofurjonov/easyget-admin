@@ -1,10 +1,10 @@
 import React from 'react';
+import MainModal from '../../components/MainModal/MainModal';
 
 const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
-        </div>
+        <>
+        </>
     );
 }
 
