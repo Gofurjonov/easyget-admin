@@ -1,38 +1,62 @@
-import React from 'react';
 
-
+import React, {useState, useEffect} from 'react';
+import { useNavigate } from 'react-router';
 const Login = () => {
+
+    const [login, setLogin] = useState('')
+    const [password, setPassword] = useState('')
+    const navigate = useNavigate();
+
+    const addPost = async (login, password) => {
+        let response = await fetch('https://api.dassyor.uz/admin/login', {
+            method: 'POST',
+            body: JSON.stringify({
+                login: login,
+                password: password,
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        });
+
+        let data = await response.json();
+        setLogin('')
+        setPassword('')
+        if (data.status) {
+            localStorage.setItem('token', data.data.token);
+console.log(data);
+            console.log('Login successful');
+            navigate('/home');
+          } else {
+            console.log('Invalid credentials');
+          }
+    }
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+        addPost(login, password)
+        };
     return (
         <>
-            {/* <div className="loginbox">
-                <div className="loginbox__body">
-                    <h1 className='loginbox__title'>sign in</h1>
-                    <form className='loginbox__container'>
-                        <label className='loginbox__labelOne'>username</label>
-                        <input type="text" placeholder='username'/>
-                        <label className='loginbox__labelTwo'>Password</label>
-                        <input type="password" placeholder='password'/>
-                        <button className='loginbox__button'>sign in</button>
-                    </form>
-                </div>
-            </div> */}
-            <div className="login-page">
-        <div className="form">
-            <form className="register-form">
-            <input type="text" placeholder="name"/>
-            <input type="password" placeholder="password"/>
-            <input type="text" placeholder="email address"/>
-            <button>create</button>
-            <p className="message">Already registered? <a href="#">Sign In</a></p>
-            </form>
-            <form className="login-form">
-            <input type="text" placeholder="username"/>
-            <input type="password" placeholder="password"/>
-            <button>login</button>
-            <p className="message">Not registered? <a href="#">Create an account</a></p>
-            </form>
-        </div>
-        </div>
+            <div className="login-card__page">
+                <form action="" className="login-card" autoComplete="off">
+                    <h4 className='login-card__title' >Login to EasyGet-admin page</h4>
+                    <p className='login-card__text'>Welcome back! Log in to your account</p>
+                    <div className="login-card__all-inputs">
+                        <div className="login-card__label">
+                            <label htmlFor="email" className='login-card__email-text'>Email:</label>
+                            <input placeholder="Email" type="email" name="email" id="email" autoComplete="off"  value={login} onChange={(e) => setLogin(e.target.value)}/>
+                        </div>
+                        <div className="login-card__label">
+                            <label htmlFor="password">Password:</label>
+                            <input placeholder="Password" type="password" name="password" id="password" autoComplete="off" value={password} onChange={(e) => setPassword(e.target.value)} />
+                        </div>
+                    </div>
+                    <div className="login-card__submit-button-container">
+                        <button type="submit" onClick={handleLogin}className="login-card__submit-button">Log in</button>
+                    </div>
+                </form>
+            </div>
         </>
     );
 }

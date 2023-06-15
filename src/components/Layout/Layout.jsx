@@ -10,7 +10,7 @@ export default function Layout({ children }) {
        <Header/>
       
        </header>
-          <Sidebar/>
+           <Sidebar/>
         
       </div>
       <main  className="mainbox">
