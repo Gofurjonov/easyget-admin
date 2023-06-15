@@ -4,9 +4,9 @@ import Home from './pages/Home/Home'
 import Login from './pages/Login/Login'
 import Layout from './components/Layout/Layout'
 import Maincategories from './components/Maincategories/Maincategories'
-import Errormodal from './components/Errormodal/Errormodal'
-import Editmodal from './components/Editmodal/Editmodal'
-import NewsubModal from './components/NewsubModal/NewsubModal'
+import Users from './components/Users/Users'
+import Companies from './components/Companies/Companies'
+import Orders from './components/Orders/Orders'
 
 function App() {
   const isAuthenticated = true;
@@ -17,9 +17,10 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/maincategori' element={<Maincategories/>}/>
-        <Route path='/errormodal' element={<Errormodal/>}/>
-        <Route path='/editmodal' element={<Editmodal/>}/>
-        <Route path='/newsubmodal' element={<NewsubModal/>}/>
+        <Route path='/users' element={<Users/>}/>
+        <Route path='/companies' element={<Companies/>}/>        
+        <Route path='/orders' element={<Orders/>}/>      
+        
       </Routes>
           </>
   );

@@ -21,6 +21,20 @@
             }
         }
     }
+    &__main__btn{
+       display: flex;
+       align-items: center;
+       font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+            text-align: center;
+    }
+    &__main__button{
+        img{
+            width: 20px;
+        }
+    }
 }
 .maincategoribox{
     &__top{
@@ -50,8 +64,9 @@
 .category{
     &__box{
         width: 100% !important;
-        display: flex;
+        display: flex !important;
         flex-wrap: wrap;
+        justify-content: space-between;
         gap: 30px;
         margin-top: 40px;
         margin-bottom: 40px;
@@ -59,18 +74,23 @@
     &__name{
         color: $text-primary;
     }
+    a{
+        display: inline-block;
+        background: #000;
+    }
     &__big{
-        width: 280px !important;
+        width: 48% !important;
+
     }
     &__small{
-        width: 35% !important;
+        width: 31% !important;
     }
     &__big-and-small{
         background-color: $background-gray;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 168px !important;
+        height: 168px ;
         padding: 16px;
         border-radius: 10px;
     }
@@ -80,4 +100,40 @@
         color: $text-primary;
     }
     
+}
+
+
+
+.boxcha{
+width: 100%;
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent !important;
+}
+.categorybox{
+    width: 100%;
+}
+.newSubcategory{
+    width: 33%;
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: green;
+        border: 1.5px dashed $stroke-gray-secondary;
+        border-radius: 24px;
+        padding: 61px 0 60px 0;
+        &__title{
+            padding-left: 6px;
+        }
+    }
+}
+.boxcha{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: $text-primary;
 }

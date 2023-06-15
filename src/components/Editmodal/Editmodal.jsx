@@ -1,7 +1,10 @@
 import React from 'react';
 import Input from "../Input/Input";
 import Button from "../button/Button";
-const Editmodal = () => {
+const Editmodal = ({ isOpen, onClose }) => {
+    if (!isOpen) {
+        return null;
+      }
     return (
         <div>
               <div className="modal__backdrop">
@@ -9,7 +12,10 @@ const Editmodal = () => {
                         <div className="editbox__top">
                             <div className="editbox__top__title">
                                <div><h1 className='editbox__top__title__text'>Edit Main category</h1></div> 
-                                <button className="editbox__top__title__button">
+                                <button className="editbox__top__title__button" onClick={() => {
+                                    // console.log("olllll");
+                                    onClose()
+                                    }}>
                                     <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="icon icon-tabler icon-tabler-x"
@@ -35,7 +41,8 @@ const Editmodal = () => {
                         <div className="editbox__bottom">
                         <Button text={"Cancel"} 
                             appereans={"neutral"}
-                            className={"button_tertiary editbox__bottom__btn"}/>
+                            className={"button_tertiary editbox__bottom__btn"}
+                            onClick={onClose}/>
                         <Button text={"Save"} 
                             appereans={"regular"}
                             className={"button_primary editbox__bottom__btn"}/>

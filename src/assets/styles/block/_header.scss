@@ -2,6 +2,7 @@ header{
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 50;
     left: 0;
     height: 50px;
     padding-left: 190px;
@@ -13,6 +14,8 @@ header{
     justify-content: space-between;
     background: $background;
     border-bottom: 1.5px solid $stroke-gray-primary;
+    position: fixed;
+    z-index:99;
     &__title{ 
         
         &__name{
