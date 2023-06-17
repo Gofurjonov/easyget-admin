@@ -21,7 +21,7 @@ function Input(props) {
                     <span className={props.icon ? "input__icon" : ""}>
                         <img src={props.icon} alt="" />
                     </span>
-                    <input required={props.required} className={props.value && props.label ? "input__input-lable" : "input__qidiruv"} type={props.type || "text"} onChange={props.onChange} placeholder={props.placeholder} 
+                    <input required={props.required} className={`${props.value && props.label ? "input__input-lable" : "input__qidiruv"} ${props.className}`} type={props.type || "text"} onChange={props.onChange} placeholder={props.placeholder} 
                     onFocus={heandleFocus} onBlur={heandleBlur}/>
                 </div>
                 <div className="input__error-div">

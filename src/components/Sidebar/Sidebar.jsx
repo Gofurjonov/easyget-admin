@@ -1,6 +1,7 @@
 import React from "react";
 import sitelogo from "../../assets/images/site-logo.png";
 import userlogo from "../../assets/images/userlogo.png";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -35,7 +36,7 @@ const Sidebar = () => {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <Link to="/maincategori">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-category"
@@ -55,10 +56,10 @@ const Sidebar = () => {
                     <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
                   </svg>
                   <span className="sidebarbody__navbar__span">Categories</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/users">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-users"
@@ -78,10 +79,10 @@ const Sidebar = () => {
                     <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
                   </svg>
                   <span className="sidebarbody__navbar__span">Users</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/companies">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-report"
@@ -104,10 +105,10 @@ const Sidebar = () => {
                     <path d="M8 15h3"></path>
                   </svg>
                   <span className="sidebarbody__navbar__span">Companies</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/orders">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-shopping-cart"
@@ -127,7 +128,7 @@ const Sidebar = () => {
                     <path d="M6 5l14 1l-1 7h-13"></path>
                   </svg>
                   <span className="sidebarbody__navbar__span">Orders</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

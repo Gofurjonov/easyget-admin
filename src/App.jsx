@@ -15,6 +15,9 @@ const token = localStorage.getItem('token');
 
   return token ? <Element /> : < Navigate to="/" replace/>;
 }
+import Users from './components/Users/Users'
+import Companies from './components/Companies/Companies'
+import Orders from './components/Orders/Orders'
 
 function App() {
   return (

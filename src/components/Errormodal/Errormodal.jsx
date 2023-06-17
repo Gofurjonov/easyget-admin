@@ -2,7 +2,10 @@ import React from "react";
 import Delete from "../../assets/images/not.png";
 import Button from "../button/Button"
 
-const Errormodal = () => {
+const Errormodal = ({ show, onClose }) => {
+  if (!show) {
+    return null;
+  }
   return (
     <div>
       <div className="modal__backdrop">
@@ -10,7 +13,7 @@ const Errormodal = () => {
           <div className="deletebox__top">
             <div className="deletebox__top__image">
               <img src={Delete} alt="" />
-              <button className="deletebox__top__image__button">
+              <button className="deletebox__top__image__button" onClick={onClose}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-x"
@@ -37,10 +40,12 @@ const Errormodal = () => {
           <div className="deletebox__bottom">
             <Button text={"Cancel"} 
                 appereans={"neutral"}
-                className={"button_tertiary deletebox__bottom__btn"}/>
+                className={"button_tertiary deletebox__bottom__btn"} onClick={onClose}/>
             <Button text={"Delete"} 
                 appereans={"negative"}
-                className={"button_primary deletebox__bottom__btn"}/>
+                className={"button_primary deletebox__bottom__btn"} onClick={() => {
+                  onClose();
+                }}/>
           </div>
         </div>
       </div>

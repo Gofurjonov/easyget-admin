@@ -3,14 +3,15 @@ import Input from '../Input/Input';
 import Button from '../button/Button';
 
 const NewsubModal = () => {
+   
     return (
         <div>
-            <div className="modal__backdrop">
+            <div className="modal__backdropt">
                     <div className="editbox">
                         <div className="editbox__top">
                             <div className="editbox__top__title">
                                <div><h1 className='editbox__top__title__text'>Newsub category</h1></div> 
-                                <button className="editbox__top__title__button">
+                                <button className="editbox__top__title__button" >
                                     <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="icon icon-tabler icon-tabler-x"
@@ -40,7 +41,7 @@ const NewsubModal = () => {
                             className={"button_tertiary editbox__bottom__btn"}/>
                         <Button text={"Save"} 
                             appereans={"regular"}
-                            className={"button_primary editbox__bottom__btn"}/>
+                            className={"button_primary editbox__bottom__btn"} />
                         </div>
                     </div>
               </div>
@@ -49,3 +50,4 @@ const NewsubModal = () => {
 }
 
 export default NewsubModal;
+
