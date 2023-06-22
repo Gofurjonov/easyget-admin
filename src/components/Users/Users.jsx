@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Table } from 'reactstrap';
 import Input from "../Input/Input";
 import search from "../../assets/images/search-grey.svg"
+import'bootstrap/dist/css/bootstrap.min.css';
+
 const Users = () => {
   // const [users, setUsers] = useState([]);
   const user = [
@@ -28,10 +30,11 @@ const Users = () => {
   // }, []);
   return (
     <div>
-      <div className="containerbox">
+      <div className="main-subcategory-window">
+      <div className="main-subcategory-window__page containerbox">
         <div className="containerbox__title">
           <div>
-            <h1 className="containerbox__title__name">Users</h1>
+            <h1 className="main-subcategory-window__page__header containerbox__title__name">Users</h1>
           </div>
           <div>
           <Input icon={search} placeholder='Search by id, phone, name...' className="tableInput"/>
@@ -76,6 +79,8 @@ const Users = () => {
   </tbody>
 </Table>
       </div>
+      </div>
+      
     </div>
   );
 };

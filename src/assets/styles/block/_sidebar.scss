@@ -16,6 +16,7 @@
         padding-bottom: 201px;
         &__menu{
             list-style: none;
+            padding-left: 29px;
             li{
                 padding-bottom: 29px;
             }
@@ -68,6 +69,7 @@
             align-items: center;
             padding-left: 29px;
             border-top: 1.5px solid $stroke-gray-primary;
+            padding-top: 29px;
             &__logotip{
                 color: $text-negative;
             }

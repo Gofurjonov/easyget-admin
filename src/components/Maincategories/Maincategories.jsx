@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import {
   Accordion,
   AccordionBody,
@@ -30,12 +29,20 @@ export default function Maincategories(props) {
     function toggleDeleteModal() {
       setShowDeleteModal(!showDeleteModal);
     }
-    useEffect(() => {
-      fetch("https://api.dassyor.uz/client/category/3")
+  },[])
+  useEffect(() => {
+      try{
+        fetch("https://api.dassyor.uz/client/category/3")
         .then(res => res.json())
         .then(data => {
           data.status ? setData(data.data) : setData([])
+        }).catch((error)=>{
+          console.log(error);
         })
+      }catch(error){
+        console.log(error.massage);
+      }
+      
 
     }, [])
     console.log(data);
@@ -49,7 +56,7 @@ export default function Maincategories(props) {
     };
 
     return (
-      <>
+      <section className='categories__section'>
         <div className="containerbox">
           <div className="containerbox__title">
             <div>
@@ -116,7 +123,7 @@ export default function Maincategories(props) {
             ))}
           </Accordion>
         </div>
-      </>
+      </section>
     );
-  }, [])
-}
+  }
+

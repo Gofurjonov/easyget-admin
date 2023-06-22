@@ -2,6 +2,8 @@ import React from 'react';
 import { Table } from 'reactstrap';
 import Input from '../Input/Input';
 import search from "../../assets/images/search-grey.svg"
+import'bootstrap/dist/css/bootstrap.min.css';
+
 const Orders = () => {
     const user = [
         { id: 1, name: "Abdulrashid Abdilaxmedov", number: +998908234923, locatsion: "Мирабад район, Тараса Шевченко 36а", products: "1. Газированный напиток Coca-Cola...", data:"23.01.202315:35", price:"99 999 999 cум" }
@@ -9,8 +11,9 @@ const Orders = () => {
       ];
     return (
         <div>
-            <div className="containerbox">
-        <div className="containerbox__title">
+          <div className="main-subcategory-window">
+          <div className="main-subcategory-window__page containerbox">
+        <div className="main-subcategory-window__page__header containerbox__title">
           <div>
             <h1 className="containerbox__title__name">Orders</h1>
           </div>
@@ -60,7 +63,10 @@ const Orders = () => {
     }
   </tbody>
 </Table>
-      </div>
+      `````</div>
+          </div>
+
+            
         </div>
     );
 }

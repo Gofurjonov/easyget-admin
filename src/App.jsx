@@ -1,9 +1,8 @@
-
 import './App.css'
 import Home from './pages/Home/Home'
 import Login from './pages/Login/Login'
 import Layout from './components/Layout/Layout'
-import Maincategories from './components/Maincategories/Maincategories'
+import Maincategories from './components/Maincategories/Maincategories';
 import Errormodal from './components/Errormodal/Errormodal'
 import Editmodal from './components/Editmodal/Editmodal'
 import NewsubModal from './components/NewsubModal/NewsubModal'
@@ -26,11 +25,14 @@ function App() {
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/home" element={<PrivateRoute element={Home} />} />
-      <Route path="/maincategory" element={<PrivateRoute element={Maincategories} />} />
+      <Route path="/maincategories" element={<PrivateRoute element={Maincategories} />} />
       <Route path="/errormodal" element={<PrivateRoute element={Errormodal} />} />
       <Route path="/editmodal" element={<PrivateRoute element={Editmodal} />} />
       <Route path="/newsubmodal" element={<PrivateRoute element={NewsubModal} />} />
       <Route path="/subcategory" element={<PrivateRoute element={Subcategory} />} />
+      <Route path="/users" element={<PrivateRoute element={Users} />} />
+      <Route path="/companies" element={<PrivateRoute element={Companies} />} />
+      <Route path="/orders" element={<PrivateRoute element={Orders} />} />
     </Routes>
     </Layout>
   </>

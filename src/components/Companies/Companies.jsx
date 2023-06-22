@@ -2,6 +2,7 @@ import React from 'react';
 import { Table } from 'reactstrap';
 import Input from '../Input/Input';
 import search from "../../assets/images/search-grey.svg"
+import'bootstrap/dist/css/bootstrap.min.css';
 
 const Companies = () => {
     const user = [
@@ -13,8 +14,9 @@ const Companies = () => {
       ];
     return (
         <div>
-            <div className="containerbox">
-        <div className="containerbox__title">
+            <div className="main-subcategory-window">
+            <div className="main-subcategory-window__page containerbox">
+        <div className="main-subcategory-window__page__header containerbox__title">
           <div>
             <h1 className="containerbox__title__name">Companies</h1>
           </div>
@@ -44,7 +46,9 @@ const Companies = () => {
     }
   </tbody>
 </Table>
-      </div>
+            </div>
+            </div>
+            
         </div>
     );
 }

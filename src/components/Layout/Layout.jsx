@@ -3,14 +3,19 @@ import Sidebar from "../Sidebar/Sidebar";
 
 
 export default function Layout({ children }) {
+  const token = window.localStorage.getItem("token")
     return (
       <>
       <div className="layoutbox">
-       <header >
-       <Header/>
-      
-       </header>
-           <Sidebar/>
+       {token ? 
+        <>
+        <header >
+          <Header/>
+          
+          </header>
+              <Sidebar/>
+        </> : null
+       }
         
       </div>
       <main  className="mainbox">

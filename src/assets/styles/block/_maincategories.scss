@@ -1,11 +1,14 @@
+.categories__section{
+    padding-top: 150px;
+    width: 100%;
+}
 .containerbox{
-    padding-left: 232px;
-    padding-right: 32px;
-    padding-top: 160px;
+   width: 100%;
     &__title{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
         &__name{
             font-family: 'Inter';
             font-style: normal;
